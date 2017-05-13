@@ -1,0 +1,202 @@
+<!---Author: Vineel Boddula 
+ Student Number: 101018032 -->
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf8"/>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+ 
+	<link href="css/matrixStyle.css" rel="stylesheet">
+	<script src="js/matrixClient.js"></script>
+	
+</head>
+<body>
+
+    
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation" id ="myNavBar">
+         
+		<div class="container topnav">
+            
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBarMain">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                   
+                </button>
+                 
+				<a class="navbar-brand "href="#"><i class="fa fa-home"></i></a>
+            </div>
+           
+            <div class="collapse navbar-collapse" id="navBarMain">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#matrix"><span class="fa fa-lightbulb-o"></span> Matrix</a></li>
+					<li><a href="#setup"><span class="fa fa-tasks fa-lg"></span> Setup</a></li>
+					<li><a href="#contact"><span class="fa fa-github fa-lg"></span> Contact</a></li>
+					
+                </ul>
+            </div>
+           
+        </div>
+        
+    </nav>
+	
+	
+	<h1>Led Matrix 8x8</h1>
+	<a name="matrix"></a>
+		<div class="matrixA">
+			<table id="gameBoard">
+			</table>
+			</div>
+		<div class="col-lg-12">
+			<div class="col-xs-4">
+				<a class="btn btn-primary btn-lg"  onClick="generateCode();">
+					<span  id = "btnGenerate">Generate Code</span>
+				</a>
+			</div>
+		</div>	
+		
+		<textarea class="form-control" rows="5"  id="txtGenerateCode"  ></textarea>
+		
+		<div class="form-group">
+			<label id = "inputLabel" class="col-sm-3 control-label">Enter string to turn into byteCode:</label><br/>
+				<input type="text"  placeholder="Name? or any String" id="inputString" /> 
+		</div>
+			
+		<div class="col-lg-12">
+			<div class="col-xs-4">
+				<a class="btn btn-primary btn-lg"  onClick="stringGenerateCode();">
+					<span id = "btnStringGenerator">Generate Code</span>
+				</a>
+			</div>
+		</div>	
+			
+		<textarea class="form-control" rows="5" id="txtGenerateCodeString" ></textarea>	
+		 <div class = "pargText">
+			<p> To find the complete code please visit my Github :      
+				<a class="btn btn-primary btn-lg"  href="https://github.com/vineelBoddula/Arduino/blob/master/led8by8MatrixDisplay.ino">
+					<span id = "btnStringGenerator">Github</span>
+				</a>
+			</p> 
+		 </div>
+	
+	<a name="setup"></a>
+		<h1>How to setup the Ardunio Board</h1>
+		<h3>How to setup the pins of board </h3>
+		
+		<img class="img-fluid" src="img/ardunioTablePin.jpg" >
+		<h3> Sample look of the board diagram</h3>
+		<img class="img-fluid" src="img/ardunioBoard.jpg" >
+	
+	 <div class = "pargText">
+			<p> To find the complete code please visit my Github :      
+				<a class="btn btn-primary btn-lg"  href="https://github.com/vineelBoddula/Arduino/blob/master/led8by8MatrixDisplay.ino">
+					<span id = "btnStringGenerator">Github</span>
+				</a>
+			</p> 
+	</div>
+  
+  <h3>Testing Pictures</h2>
+	<div class="container">
+  
+    
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" style="overflow:hidden">
+    
+			<ol class="carousel-indicators">
+			  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			  <li data-target="#myCarousel" data-slide-to="1"></li>
+			  <li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+
+			
+			<div class="carousel-inner">
+			  <div class="item active">
+				<img src="img/IMG_20170512.png" alt="" style ="  margin-left: auto;
+					margin-right: auto;">
+			  </div>
+
+			  <div class="item">
+				<img src="img/IMG_20170513_004616.452.png" alt=""style =" margin-left:auto;
+					margin-right: auto;">
+			  </div>
+			
+			  <div class="item">
+				<img src="img/IMG_20170512_230301.809.png" alt="" style =" margin-left: auto;
+					margin-right: auto;">
+			  </div>
+			  
+			</div>
+
+			
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			  <span class="glyphicon glyphicon-chevron-left"></span>
+			  <span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			  <span class="glyphicon glyphicon-chevron-right"></span>
+			  <span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+	
+<a  name="contact"></a>
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>More projects can be found at Github:</h2>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-inline ">
+                        <li>
+                            <a href="https://github.com/vineelBoddula" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-default btn-lg disabled"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+      
+
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#projects">projects</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; Vineel Boddula 2017. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
